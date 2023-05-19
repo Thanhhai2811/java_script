@@ -16,9 +16,9 @@
 
 
 
-let ngaysinh='25'
-let thangsinh='54'
-let namsinh='1998'
+const ngaysinh='25'
+const thangsinh='54'
+const namsinh='1998'
 
 
 document.write(ngaysinh + thangsinh + namsinh)
