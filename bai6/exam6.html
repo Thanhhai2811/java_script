@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" onclick="showMessage()">Click here</a>
+    <br/>
+    <button onclick="typingValue()">Nhập giá trị</button>
+    
+    <div>
+       <br/>
+       
+       <button onclick="deleteUser()">Delete User</button>
+    </div>
+    <script>
+   
+
+       function showMessage() {
+        alert('ban vua click vao here');
+       }
+
+       function typingValue() {
+        let numberOne = prompt('nhap gia tri ma ban can', 10)
+        document.write(numberOne)
+       }
+       
+      function deleteUser() {
+        let confirmAction = confirm('Bạn có thực sự muốn xóa không')
+        if (confirmAction) {
+            alert('thực hiện xóa User') 
+        }
+      }
+    </script>
+    <!-- <a href="#" onclick="showMessage()">Click here</a>
+    <button onclick="typingAction()">Nhập vô đây</button>
+    <script>
+          function showMessage() {
+            alert('bạn đã click vào')
+          }
+
+          function typingAction() {
+            let numberOne = prompt('giá trị mà bạn có', 10)
+            document.write(numberOne)
+          }
+    </script> -->
+
+  
+</body>
+</html>
