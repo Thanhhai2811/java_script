@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naming a funcition</title>
+
+
+</head>
+<body>
+    <script>
+        // function getName() {
+        //     return 'nguyen van a' 
+        // }
+
+        // let getInfo = function(name) {
+        //     return `${name}`
+        // } 
+        // Arrow function : Bỏ từ khóa function
+        // document.write(get('nguyen van c'))
+        // document.write(getName('nguyen van d'))
+
+
+
+            // Kiểu Arrow function :
+        let getInfo = (name, email = 'exam@gmail.com') => {
+
+            // Hiển thị thông tin --> : Email , địa chỉ , họ và tên
+            return `Tên bạn là : ${name}</br>
+            email của bạn là : ${email}  
+        `
+    }
+        document.write(getInfo('Nguyễn Văn C', 'nguyenvanc@gmail.com'))
+       document.write('<hr/>')
+        document.write(getInfo('Nguyễn thanh hà'))
+        
+
+        
+    </script>
+</body>
+</html>
