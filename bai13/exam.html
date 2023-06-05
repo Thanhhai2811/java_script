@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object trong javascript</title>
+</head>
+<body>
+    <script>
+
+        // Định nghĩa một Object
+     let student = {
+        name : 'NGuyễn văn B',
+        email : 'suntech@gmail.com',
+        school : {
+            name : 'Đại học thương mại',
+            addrees : 'Hà Nội'
+        },
+        fullname:  function () {
+            return this.name
+        },
+
+        getEmail: function() {
+            return this.email
+        },
+        getSchool: function() {
+            return this.school
+        }
+
+     }
+
+    //  console.log(student.name)
+    //  console.log(student.school)
+     
+    //  document.write(student.email)
+     
+
+    console.log(student.fullname())
+    console.log(student.getEmail())
+    console.log(student.getSchool())
+   
+    document.write(student.school.addrees)     
+    </script>
+</body>
+</html>
